@@ -1,0 +1,80 @@
+{
+  "model_name": "cti_pipeline",
+  "model_path": "D:\\CTI\\models\\cti_pipeline.pkl",
+  "trained_at_utc": "2026-05-03T03:57:11.956491+00:00",
+  "sklearn_version": "1.7.2",
+  "dataset_path": "D:\\CTI\\data\\processed\\final_cti_dataset.csv",
+  "rows_after_cleaning": 43701,
+  "duplicate_text_label_rows_retained": 0,
+  "labels": [
+    "HIGH",
+    "MEDIUM",
+    "LOW"
+  ],
+  "pipeline": {
+    "vectorizer": "TfidfVectorizer",
+    "classifier": "LogisticRegression",
+    "ngram_range": [
+      1,
+      2
+    ],
+    "max_features": 50000
+  },
+  "classification_report": {
+    "HIGH": {
+      "precision": 0.7385392385392385,
+      "recall": 0.7957304311427376,
+      "f1-score": 0.766068909933508,
+      "support": 2389.0
+    },
+    "MEDIUM": {
+      "precision": 0.7989773950484392,
+      "recall": 0.8112021857923497,
+      "f1-score": 0.8050433839479393,
+      "support": 3660.0
+    },
+    "LOW": {
+      "precision": 0.9534883720930233,
+      "recall": 0.8681277860326895,
+      "f1-score": 0.9088080886642038,
+      "support": 2692.0
+    },
+    "accuracy": 0.8245052053540785,
+    "macro avg": {
+      "precision": 0.830335001893567,
+      "recall": 0.8250201343225921,
+      "f1-score": 0.826640127515217,
+      "support": 8741.0
+    },
+    "weighted avg": {
+      "precision": 0.830044411900463,
+      "recall": 0.8245052053540785,
+      "f1-score": 0.8263481049953832,
+      "support": 8741.0
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "HIGH",
+      "MEDIUM",
+      "LOW"
+    ],
+    "matrix": [
+      [
+        1901,
+        478,
+        10
+      ],
+      [
+        587,
+        2969,
+        104
+      ],
+      [
+        86,
+        269,
+        2337
+      ]
+    ]
+  }
+}

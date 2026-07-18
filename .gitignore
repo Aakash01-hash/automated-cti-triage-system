@@ -1,0 +1,41 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated reports and runtime output
+outputs/
+*.log
+
+# Large or reproducible datasets
+data/raw/
+data/processed/*.csv
+data/processed/*.parquet
+data/processed/*.xlsx
+
+# Model backups and experimental artifacts
+models/*.before_*.pkl
+models/*.before_*.joblib
+models/*.before_*.json
+models/*.before_*.txt
+
+# Keep the production model and metrics tracked
+!models/cti_pipeline.pkl
+!models/cti_pipeline_metrics.json
