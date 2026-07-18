@@ -39,15 +39,25 @@ flowchart LR
 
 ![Analysis results dashboard](docs/figures/04-analysis-results-dashboard.png)
 
+
+
 ### Model Evaluation
 
+
+
 ![Confusion matrix and classification report](docs/figures/01-model-evaluation-confusion-matrix.png)
+
+
 
 ### Forensic Report Output
 
 ![Forensic report summary](docs/figures/13-forensic-report-summary.png)
 
+
+
 More project figures are available in [`docs/figures`](docs/figures).
+
+
 
 ## Repository Layout
 
